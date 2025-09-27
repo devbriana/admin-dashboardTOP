@@ -8,7 +8,7 @@
 body {
     display: grid;
     grid-template-columns: .5fr repeat(2, 1fr) .5fr;
-    grid-template-rows: minmax(auto, .25fr) repeat(3, 1fr);
+    grid-template-rows: minmax(auto, .25fr) repeat(3, 1fr) .15fr;
 }
 
 
@@ -239,4 +239,21 @@ main > div > h3 {
 #trending-cards > div {
     display: flex;
     gap: 30px;
+}
+
+
+
+
+
+
+/* footer */
+footer {
+    grid-column: 1 / -1;
+    grid-row: 5 / -1;
+    background-color: aquamarine;
+    z-index: 1;
+}
+
+footer p {
+    margin-left: 500px;
 }
