@@ -11,7 +11,7 @@ body {
     grid-template-columns: .5fr repeat(2, 1fr) .5fr;
     grid-template-rows: minmax(auto 225px) auto auto;
     font-family: "Roboto", sans-serif;
-    font-weight: 400; /* choose desired weight */
+    font-weight: 400; 
 }
 
 
@@ -40,12 +40,14 @@ aside {
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 
 aside > #dash-icon-title > h1 {
     padding-bottom: 3rem;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 aside > nav > ul {
@@ -56,6 +58,7 @@ aside > nav > ul {
 aside > nav > ul > li {
     padding-bottom: .5rem;
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 aside > nav > ul > li > img {
@@ -92,6 +95,7 @@ header {
     width: 300px;
     height: 30px;
     padding: 10px;
+    cursor: text;
 }
 
 #profile-nav-dash {
@@ -107,6 +111,7 @@ header {
     height: 1.3em;
     display: inline;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 #profile-nav-dash > div > .pic-thumbnail {
@@ -117,6 +122,7 @@ header {
     border-radius: 50%;
     object-fit: cover;
     border: solid rgb(220, 188, 9) 2px;
+    cursor: pointer;
 }
 
 
@@ -157,6 +163,7 @@ header {
     text-justify: center;
     padding: .75vw 2vw;
     font-size: clamp(0.75rem, 2vw, 1rem);
+    cursor: pointer;
 }
 
 
@@ -168,6 +175,7 @@ header {
     border-radius: 50%;
     object-fit: cover;
     border: solid rgb(220, 188, 9) 2px;
+    cursor: pointer;
 }
 
 #greeting > div:last-child {
@@ -223,8 +231,27 @@ main > div > h3 {
     padding: 2em;
     border-left: solid rgb(220, 188, 9) 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
 
 }
+
+#proj-container > #proj-cards > .card > .three-icons {
+    display: flex;
+    justify-content: flex-end;  
+    gap: 0.5em;                 
+    margin-top: 1.2rem;
+
+}
+
+#proj-container > #proj-cards > .card > .three-icons > div > .card-icons {
+    height: 1.1em;
+    display: inline;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+
 
 #right-bar > div > h3 {
     margin-top: 1em;
@@ -275,6 +302,7 @@ main > div > h3 {
 #trending-cards > div {
     display: flex;
     gap: 20px;
+    cursor: pointer;
 }
 
 #trending-cards > div > .icon > .user-thumbnail{
@@ -298,18 +326,11 @@ main > div > h3 {
 
 
 
-
-
-
-
-
 /* footer */
 footer {
     grid-column: 1 / -1;
     background-color: aquamarine;
     z-index: 1;
+    text-align: center;
 }
 
-footer p {
-    margin-left: 500px;
-}
