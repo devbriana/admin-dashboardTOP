@@ -10,20 +10,50 @@
 <body>
     <!-- side bar = main navigation -->
     <aside>
-        <h1>Dashboard</h1>
+        <div id="dash-icon-title">
+            <span id="dash-img"></span>
+            <h1>Dashboard</h1>
+        </div>
         <nav aria-label="Main navigation">
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+                <li>
+                    <img src="svgs/home.svg" alt="Home" class="nav-icon">
+                    Home
+                </li>
+                <li>
+                    <img src="svgs/profile.svg" alt="Home" class="nav-icon">
+                    Profile
+                </li>
+                <li>
+                    <img src="svgs/messages.svg" alt="Home" class="nav-icon">
+                    Messages
+                </li>
+                <li>
+                    <img src="svgs/history.svg" alt="Home" class="nav-icon">
+                    History
+                </li>
+                <li>
+                    <img src="svgs/tasks.svg" alt="Home" class="nav-icon">
+                    Tasks
+                </li>
+                <li>
+                    <img src="svgs/communities.svg" alt="Home" class="nav-icon">
+                    Communities
+                </li>
             </ul>
             <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li>
+                    <img src="svgs/settings.svg" alt="Home" class="nav-icon">
+                    Settings
+                </li>
+                <li>
+                    <img src="svgs/support.svg" alt="Home" class="nav-icon">
+                    Support
+                </li>
+                <li>
+                    <img src="svgs/privacy.svg" alt="Home" class="nav-icon">
+                    Privacy
+                </li>
             </ul>
         </nav>
     </aside>
@@ -33,23 +63,23 @@
     <!-- top bar = secondary/utility navigation -->
     <header>
       <div id="row-one">
-        <div id="search">
+        <div id="search-container">
             <form action="/search" method="get" role="search"></form>
-            <label for="search">Search Icon:</label>
+            <label for="search"><img src="svgs/search.svg" alt="search" class="header-icon"></label>
             <input type="search" name="search" id="search" placeholder="Search...">
         </div>
         <div id="profile-nav-dash">
-            <div>Notification icon</div>
-            <div>profile pic</div>
-            <div>username</div>
+            <div><img src="svgs/notifications.svg" alt="notifications" class="header-icon"></div>
+            <div><img src="svg-propics/mypic.svg" alt="profile thumbnail" class="pic-thumbnail"></div>
+            <div><strong>DevBri</strong></div>
         </div>
       </div>
       <div id="row-two">
         <div id="left-side">
-            <div id="thumbnail">pic</div>
+            <div id="thumbnail"><img src="svg-propics/mypic.svg" alt="pofile thumbnail"></div>
             <div id="greeting">
                 <div>Hi there,</div>
-                <div>Username (@username)</div>
+                <div>DevBri (@devbri)</div>
             </div>
         </div>
         <div id="right-side">
@@ -122,28 +152,28 @@
                 <h3>Trending</h3>
                 <div id="trending-cards">
                     <div>
-                        <div class="icon"></div>
+                        <div class="icon"><img src="svg-propics/pic1.svg" alt="user thumbnail" class="user-thumbnail"></div>
                         <div>
                             <p class="user">@Morgan</p>
                             <p>really cool stuff</p>
                         </div>
                     </div>
                     <div>
-                        <div class="icon"></div>
+                        <div class="icon"><img src="svg-propics/pic2.svg" alt="user thumbnail" class="user-thumbnail"></div>
                         <div>
                             <p class="user">@Alex</p>
                             <p>also cool stuff</p>
                         </div>
                     </div>
                     <div>
-                        <div class="icon"></div>
+                        <div class="icon"><img src="svg-propics/pic3.svg" alt="user thumbnail" class="user-thumbnail"></div>
                         <div>
                             <p class="user">@Tegan</p>
                             <p>cool project</p>
                         </div>
                     </div>
                     <div>
-                        <div class="icon"></div>
+                        <div class="icon"><img src="svg-propics/pic4.svg" alt="user thumbnail" class="user-thumbnail"></div>
                         <div>
                             <p class="user">@Kendall</p>
                             <p>another cool project</p>
